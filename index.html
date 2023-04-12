@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 10px;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #input-panel{
+            margin-bottom: 8px;
+        }
+        #task-name-input{
+            width: 300px;
+            padding: 3px;
+        }
+        #add-task-btn{
+            padding: 3px 7px;
+        }
+        .task{
+            display: flex;
+            border: 1px solid gray;
+            width: 419px;
+            padding: 3px 8px;
+            margin: 2px 0;
+            
+        }
+        p{
+            margin-left: 3px;
+        }
+        .completed{
+            background-color: green;
+            color: white;
+        }
+        .completed p{
+            text-decoration: line-through;
+        }
+        .btn-remove{
+            margin-left: auto;
+            padding: 0 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="input-panel">
+        <input type="text" id="task-name-input">
+        <button id="add-task-btn">Додати завдання</button>
+    </div>
+    <div id="task-list">
+        <p id="start-message">Немає нових завдань</p>
+    </div>
+    <script src="file.js"></script>
+</body>
+</html>
